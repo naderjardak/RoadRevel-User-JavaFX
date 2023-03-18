@@ -1,0 +1,54 @@
+.dark-background{
+    
+    -fx-background-color: #222222;
+}
+
+.jfx-hamburger {
+      -fx-spacing: 7;
+    -fx-background-radius: 5px;
+	-fx-background-color: #222222;
+}
+
+.progress-bar-main .bar{
+    -fx-background-color: #222222;
+    -fx-padding: 5px;
+}.toolbar-button
+{
+    -fx-border-color: transparent;
+    -fx-background-color: derive(#222222, 10%);
+    -fx-background-radius: 16px;
+    -fx-border-radius: 10px;
+    -fx-text-fill: #676767;
+        -fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.2),10,0,0,10);
+
+}
+.toolbar-button:hover
+{
+    -fx-background-color: #676767;
+    -fx-text-fill: #222222;
+   
+}
+
+.toolbar-button:hover .glyph-icon, .toolbar-button:hover .glyph-icon
+{
+    -fx-fill: #ffffff;
+}
+.scroll-pane{
+    
+    -fx-background-color: #222222;
+}
+.gradient{
+    
+    -fx-background-color: linear-gradient(to top , #222222,transparent); 
+}
+.shadow {
+    -fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.2),10,0,0,10);
+}
+.text-field
+{
+    -fx-text-fill: #b2a02c;
+    -fx-font-size : 12pt;
+    -fx-text-fill: derive(#b2a02c, 20%);
+        -fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.2),10,0,0,10);
+
+}
