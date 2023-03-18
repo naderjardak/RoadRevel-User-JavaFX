@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" prefHeight="551.0" prefWidth="1082.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cruduser.Guide.GuideList.GuideListController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="contentPane" focusTraversable="true" layoutY="10.0" prefHeight="466.0" prefWidth="732.0" styleClass="dark-background" stylesheets="@../../util/Styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="tableView" layoutX="28.0" layoutY="97.0" prefHeight="440.0" prefWidth="1027.0" styleClass="dark-background" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="97.0">
+               <columns>
+                  <TableColumn fx:id="fnameCol" prefWidth="75.0" text="First Name" />
+                  <TableColumn fx:id="lanameCol" prefWidth="75.0" text="Last Name" />
+                  <TableColumn fx:id="mailCol" prefWidth="75.0" text="Email" />
+                  <TableColumn fx:id="phoneCol" prefWidth="75.0" text="Phone" />
+                  <TableColumn fx:id="unameCol" prefWidth="75.0" text="UserName" />
+                  <TableColumn fx:id="pwdCol" prefWidth="75.0" text="Password" />
+                  <TableColumn fx:id="cnameCol" prefWidth="75.0" text="City Name" />
+                  <TableColumn fx:id="langCol" prefWidth="75.0" text="Language" />
+                  <TableColumn fx:id="langCol2" prefWidth="75.0" text="Language 2" />
+                  <TableColumn fx:id="langCol3" prefWidth="75.0" text="Language 3" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleRefresh" text="Refresh" />
+                        <MenuItem mnemonicParsing="false" onAction="#handlePlaceEdit" text="Edit" />
+                        <MenuItem mnemonicParsing="false" onAction="#handlePlaceDelete" text="Delete" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TableView>
+            <MenuBar prefHeight="32.0" prefWidth="722.0" styleClass="dark-background" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#exportAsPDF" text="Export as PDF" />
+                        <MenuItem mnemonicParsing="false" onAction="#closeStage" text="Close" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <JFXTextField fx:id="rech" layoutX="752.0" layoutY="43.0" prefHeight="37.0" prefWidth="269.0" unFocusColor="#fffefe" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
