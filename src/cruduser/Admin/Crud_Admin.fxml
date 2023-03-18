@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="root" focusTraversable="true" prefHeight="400.0" prefWidth="600.0" styleClass="dark-background" stylesheets="@../util/Styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cruduser.admin.CrudAController">
+   <children>
+      <AnchorPane fx:id="one" focusTraversable="true" prefHeight="302.0" prefWidth="465.0">
+         <children>
+            <JFXButton fx:id="Aadmin" layoutX="36.0" layoutY="136.0" onAction="#addadmin" prefHeight="67.0" prefWidth="122.0" styleClass="toolbar-button" text="Add Admin" />
+            <JFXButton fx:id="Sadmin" layoutX="329.0" layoutY="102.0" onAction="#shadmins" prefHeight="67.0" prefWidth="122.0" styleClass="toolbar-button" text="Show Admins" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
